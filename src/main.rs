@@ -8,6 +8,6 @@ fn main() {
 
     let contents = fs::read_to_string(file_path).expect("Should have been able to read the file");
 
-    score = count_fully_inclusive_pairs(&contents);
-    println!("The outcome score is: {score}");
+    let score = count_fully_inclusive_pairs(&contents);
+    println!("{score} pairs fully include each other");
 }
